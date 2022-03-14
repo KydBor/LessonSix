@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Сomputer {
-    String CPU;
+/*    String CPU;
     int RAM;
     int Harddrive;
     int OnOff;
@@ -19,21 +19,26 @@ public class Сomputer {
         System.out.println("RAM (MB) - " + RAM);
         System.out.println("Harddrive (GB) - " + Harddrive);
         System.out.println("OnOff - " + OnOff);
-    }
+    }*/
 
-    public static void main(String[] args) {
-        Random random = new Random(); //Создать экземпляр
-        int a = random.nextInt(2);//Создайте случайное число от 0 до 99 и назначьте его случайным образом
-        System.out.println(a);//  Показать напечатать это случайное число
-        //введите данные
-        Scanner scanner = new Scanner(System.in);//  Создать экземпляр ввода
+    public static void main (String[] args) {
+        Random random = new Random();
+        int a = random.nextInt(2);
+        System.out.println(a);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите угаданный номер");
         int i = scanner.nextInt();
         if (a == i) {
-            System.out.println("Комп включается"); //Когда введенное число меньше случайного числа
+            System.out.println("Комп включается");
         } else if (a != i) {
-            System.out.println("Комп сорел");//  Когда введенное число больше случайного числа
+            System.out.println("Комп сорел");
+            System.out.println("Введите повторно число");
+            if (a != i) {
+                i = scanner.nextInt();
+            }System.out.println("У вас же комп сорел");
         }
+
+
 
     }
 
