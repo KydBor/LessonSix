@@ -1,27 +1,28 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Сomputer {
-/*    String CPU;
+public class Computer {
+    String CPU;
     int RAM;
     int Harddrive;
     int OnOff;
 
-    public Computer (String CPU, int RAM, int Harddrive, int OnOff){
+    public Computer(String CPU, int RAM, int Harddrive, int OnOff) {
         this.CPU = CPU;
         this.RAM = RAM;
         this.Harddrive = Harddrive;
         this.OnOff = OnOff;
     }
 
-    public void Description (){
-        System.out.println("CPU - " + CPU);
-        System.out.println("RAM (MB) - " + RAM);
-        System.out.println("Harddrive (GB) - " + Harddrive);
-        System.out.println("OnOff - " + OnOff);
-    }*/
+    public String Description() {
+        return "Computer: \n" +
+                " CPU - " + CPU +
+                "\n ram - " + RAM + " MB\n" +
+                " рarddrive - " + Harddrive + " GB\n" +
+                " onoff - " + OnOff;
+    }
 
-    public static void main (String[] args) {
+    public void Run() {
         Random random = new Random();
         int a = random.nextInt(2);
         System.out.println(a);
@@ -35,12 +36,8 @@ public class Сomputer {
             System.out.println("Введите повторно число");
             if (a != i) {
                 i = scanner.nextInt();
-            }System.out.println("У вас же комп сорел");
+            }
+            System.out.println("У вас же комп сорел");
         }
-
-
-
     }
-
-
 }
